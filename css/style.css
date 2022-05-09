@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Raleway', sans-serif;
+    outline: 1px solid red;
+}
+body {
+    height: auto;
+}
+img {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+    header {
+        text-align: center;
+    }
+    header img{
+        width: 30%;
+        height: 30%;
+        margin: 2%;
+    }
+    main {
+        height: auto;    
+    }
+    form i{
+        font-size: 16px;
+    }
+    main .localisation{
+        display: inline-flex;
+        align-items: center;
+        padding: 3% 35% 3% 35%;        
+        background-color: grey;
+        width: 100%;
+    }
+    .bloc_intro{
+        text-align: center;
+        background-color: lightgrey;
+    }
+    .button {
+        background-color: violet;
+        border-radius: 35px;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 30px 0px 40px 0px;
+        cursor: pointer;
+    }
+    li {
+        background-color: lightgrey;
+        border-radius: 20px;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 0px 10% 20px 10%;
+        cursor: pointer;
+        font-size: 16px;
+        width: 80%;
+    }
+    li img{
+        display: inline-flex;
+    }
+    li a{
+        display: inline-flex;
+        text-align: center;
+        text-decoration: none;
+    }
+    h1 {
+        margin: 45px 0px 20px 0px;
+    }
+    p {
+        margin-top: 15px;
+    }
+    footer {
+        text-align: center;
+        font-size: 20px;
+        background-color: #2e282a;
+        color: #fff;
+    }
+@media screen and (max-width: 1000px) {
+
+}

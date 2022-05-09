@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes ">
+	<title>Ohmyfood</title>
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-        <header>Ohmyfood</header>
+        <header>
+            <img src="images/logo/ohmyfood.png">
+        </header>
         <main>
-            <h1>Fonctionnement</h1>
-            <ul class="Fonctionnement">
-                <li><a href="#">Choisissez un restaurant</a></li>
-                <li><a href="#">Composez votre menu</a></li>
-                <li><a href="#">Dégustez au restaurant</a></li>
-            </ul>
-            <h1>Restaurants</h1>
-            <div>
-                <img src="">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
+            <form class="localisation">
+                <i class="fa-solid fa-location-dot fat-customize"></i>  
+                <input type="text" class="input" value="Paris, Belleville">
+            </form>
+            <div class="bloc_intro">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <a href="restaurants.html" class="button">Explorez nos restaurants</a>
             </div>
-
+            <div class="bloc_fonctionnement">
+                <h1>Fonctionnement</h1>
+                <ul>
+                    <li><img src="images/logo/phone.png"><a href="#">Choisissez un restaurant</a></li>
+                    <li><img src="images/logo/list.png"><a href="#">Composez votre menu</a></li>
+                    <li><img src="images/logo/market.png"><a href="#">Dégustez au restaurant</a></li>
+                </ul>
+            </div>
+            <div class="bloc_restaurants">
+                <h1>Restaurants</h1>
+                <div class="cards_restaurants">
+                    <img src="">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                    <img src="images/logo/heart.png">
+                </div>
+            </div>
         </main>
         <footer>
             <img src="">
+            <img src="images/logo/cuttlery.png">
             <a href="">Proposer un restaurant</a>
+            <img src="images/logo/hands.png">
             <a href="">Devenir partenaire</a>
             <a href="">Mentions légales</a>
             <a href="">Contact</a>
