@@ -9,7 +9,7 @@
     /*outline: 1px solid red;*/
 }
 body {
-    height: auto;
+    height: 100%;
     width: 100%;
     font-family: 'Roboto';
 }
@@ -32,7 +32,7 @@ img {
     /*Localisation*/
     main .localisation{
         display: inline-flex;
-        align-items: center;
+        justify-content: center;
         padding: 5% 25% 5% 25%;        
         background-color: #e7e7e7;
         width: 100%;
@@ -51,8 +51,9 @@ img {
         padding-top: 4%;
     }
     .button {
-        background-color: violet;
+        background: linear-gradient(#FF79DA,#9356DC );
         border-radius: 35px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         color: white;
         padding: 13px 11px;
         text-align: center;
@@ -61,6 +62,9 @@ img {
         font-size: 16px;
         margin: 25px 0px 45px 0px;
         cursor: pointer;
+    }
+    .button:hover{
+        opacity: 0.9;
     }
 
     /*Bloc Fonctionnement*/
@@ -81,12 +85,33 @@ img {
         width: 86%;
         font-weight: bold;
     }
+    li.pink {
+        background-color: #f3ebfe;
+        border-radius: 20px;
+        color: white;
+        padding: 25px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        margin: 0px 7% 15px 7%;
+        cursor: pointer;
+        font-size: 15px;
+        width: 86%;
+        font-weight: bold;
+    }
     li i{
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         margin: 0px 20px 0px 20px;
-        font-size: 20px;
+        font-size: 18px;
         color: grey;
+    }
+    li i.fa-solid.fa-store{
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin: 0px 20px 0px 20px;
+        font-size: 18px;
+        color: darkviolet;
     }
     li a{
         display: inline-flex;
@@ -114,18 +139,25 @@ img {
     }
     /*Bloc cartes restaurants*/
 .bloc_restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #f6f5f5;
     padding: 40px 0px 40px 0px;
+    gap: 20px;
 }
-
+div .bloc_img{
+    width: auto;
+    height: auto;
+}
     .cards_restaurants{
         display: inline-block;
+        align-self: center;
         background-color: white;
         border-radius: 20px;
-        margin: 0px 5% 20px 5%;
         cursor: pointer;
         font-size: 16px;
-        width: 90%;
+        width: 275px;
         height: 220px;
     }
     .cards_restaurants img {
@@ -143,7 +175,7 @@ img {
     .cards_restaurants .new {
         position: absolute;
         margin: 11px 0px 0px 185px;
-        background-color: #97dbca;
+        background-color: #99E2D0;
         width: 79px;
         height: 28px;
         padding: 7px 14px;
@@ -154,14 +186,31 @@ img {
     .cards_restaurants p {
         margin: 5px 0px 0px 15px;
     }
-    .cards_restaurants i {
+    .cards_restaurants .fa-regular.fa-heart {
             position: absolute;
             margin-left: 235px;
             margin-top: -36px;
             font-size: 22px;
     }
+    .cards_restaurants .fa-solid.fa-heart {
+        position: absolute;
+        color: transparent;        
+        margin-left: 235px;
+        margin-top: -36px;
+        font-size: 22px;
+}
+    .cards_restaurants .fa-solid.fa-heart:hover {
+        background-image: linear-gradient(45deg,#FF79DA,#9356DC );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+}
     /*Footer*/
     footer{
+        display: flex;
+        flex-direction: column;
         font-size: 16px;
         background-color: #302f2e;
         color: #fff;
@@ -175,18 +224,39 @@ img {
         margin: 20px 100% 10px 15px;
         filter: invert(100%);
     }
-    footer i{
+    span{
+        margin: 5px 0px 0px 0px;
+    }
+    span i{
         margin: 7px 5px 0px 15px;
         font-size: 12px;
     }
     footer a{
         color: white;
         text-decoration: none;
-        margin: 15px 100px 0px 5px;
+        margin: 15px 0px 0px 5px;
     }
     footer .Mentions_Contact{
-        margin: 15px 100px 0px 15px;
+        margin: 5px 0px 0px 15px;
     }
-@media screen and (max-width: 1000px) {
 
-}
+    @media (min-width: 1240px){
+        .bloc_fonctionnement {
+            padding: 15px 0px 35px 0px;
+            max-width: 1024px;
+            margin: 0px 33% 0px 33%;
+        }
+        .bloc_restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f6f5f5;
+            padding: 40px 0px 40px 0px;
+            gap: 20px;
+        }
+        header {
+            text-align: center;
+            max-width: 1024px;
+            margin: 0px 33% 0px 33%;
+        }
+    }
