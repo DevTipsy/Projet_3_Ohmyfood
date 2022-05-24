@@ -84,7 +84,9 @@ h1{
 .bloc_entrees{
     gap: 10px;
     margin-top: 15px;
-}
+    animation:animatezoom 0.6s
+  }
+  @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_entrees h2{
     font-weight: 400;
     font-size: 11px;
@@ -102,11 +104,21 @@ h1{
     padding: 10px;
     font-size: 12px;
     line-height: 1;
+    cursor: pointer;
+    transition-delay: 0ms;
+}
+.entrees:hover{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%; 
+    transition:all 0.5s ease;
 }
 .bloc_plats{
     gap: 10px;
-    margin-top: 25px;
-}
+    margin-top: 15px;
+    animation:animatezoom 0.6s
+  }
+  @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_plats h2{
     font-weight: 400;
     font-size: 11px;
@@ -124,11 +136,21 @@ h1{
     padding: 10px;
     font-size: 12px;
     line-height: 1;
+    cursor: pointer;
+    transition-delay: 0ms;
+}
+.plats:hover{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%; 
+    transition:all 0.5s ease;
 }
 .bloc_desserts{
     gap: 10px;
-    margin-top: 25px;
-}
+    margin-top: 15px;
+    animation:animatezoom 0.6s
+  }
+  @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_desserts h2{
     font-weight: 400;
     font-size: 11px;
@@ -146,6 +168,14 @@ h1{
     padding: 10px;
     font-size: 12px;
     line-height: 1;
+    cursor: pointer;
+    transition-delay: 0ms;
+}
+.desserts:hover{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%; 
+    transition:all 0.5s ease;
 }
 .entrees h3{
     width: 100%;
@@ -153,10 +183,29 @@ h1{
 .entrees p{
     display: inline-flex;
     width: 89%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .entrees span{
     display: inline-flex;
+    margin-left: 6%;
 }
+span.checkbox {
+    position: absolute;
+    top: 100px;
+    left: 509px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    }
+  .checkbox .fa-solid.fa-circle-check {
+    color: #99E2D0;
+    transition: transform 500ms ease-in-out;
+  }
 .plats h3{
     width: 100%;
 }
@@ -166,6 +215,7 @@ h1{
 }
 .plats span{
     display: inline-flex;
+    margin-left: 6%;
 }
 .desserts h3{
     width: 100%;
@@ -176,6 +226,7 @@ h1{
 }
 .desserts span{
     display: inline-flex;
+    margin-left: 6%;
 }
 .commander{
     display: flex;
@@ -256,5 +307,17 @@ button:hover{
             height: 150px;
             margin: 0% 30% 0% 30%;
             object-fit: cover;
+        }
+        .entrees span{
+            display: inline-flex;
+            margin-left: 3%;
+        }
+        .plats span{
+            display: inline-flex;
+            margin-left: 3%;
+        }
+        .desserts span{
+            display: inline-flex;
+            margin-left: 3%;
         }
     }
