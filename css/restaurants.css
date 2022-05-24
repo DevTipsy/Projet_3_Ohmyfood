@@ -84,8 +84,12 @@ h1{
 .bloc_entrees{
     gap: 10px;
     margin-top: 15px;
+<<<<<<< HEAD
     animation:animatezoom 0.6s;
     animation-delay: 0s;
+=======
+    animation:animatezoom 0.6s
+>>>>>>> d6e50529169f9889244b7ae2b307765e077ec71c
   }
   @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_entrees h2{
