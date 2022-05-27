@@ -114,7 +114,7 @@ h1{
     text-overflow: ellipsis;
     overflow: hidden;
     width: 80%; 
-    transition:all 0.5s ease;
+    transition:all 500ms ease-in-out;
 }
 .bloc_plats{
     gap: 10px;
@@ -142,13 +142,14 @@ h1{
     line-height: 1;
     cursor: pointer;
     transition-delay: 0ms;
-    white-space: nowrap
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .plats:hover{
     text-overflow: ellipsis;
     overflow: hidden;
     width: 80%; 
-    transition:all 0.5s ease;
+    transition:all 500ms ease-in-out;
 }
 .bloc_desserts{
     gap: 10px;
@@ -176,13 +177,14 @@ h1{
     line-height: 1;
     cursor: pointer;
     transition-delay: 0ms;
-    white-space: nowrap
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .desserts:hover{
     text-overflow: ellipsis;
     overflow: hidden;
     width: 80%; 
-    transition:all 0.5s ease;
+    transition:all 500ms ease-in-out;
 }
 .entrees h3{
     width: 100%;
@@ -193,7 +195,6 @@ h1{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
 }
 .entrees span{
     display: inline-flex;
@@ -219,8 +220,11 @@ span.checkbox {
     width: 100%;
 }
 .plats p{
-    display: inline-flex;
+    display: inline-block;
     width: 89%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .plats span{
     display: inline-flex;
@@ -230,8 +234,11 @@ span.checkbox {
     width: 100%;
 }
 .desserts p{
-    display: inline-flex;
+    display: inline-block;
     width: 89%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .desserts span{
     display: inline-flex;
@@ -267,7 +274,7 @@ button:hover{
         background-color: #302f2e;
         color: #fff;
         height: auto;
-        margin-top: 1000px;
+        margin-top: 970px;
         line-height: 1.5;
         padding-bottom: 30px;
     }
@@ -305,9 +312,9 @@ button:hover{
             max-width: 1024px;
             background-color: #f6f5f5;
             border-radius: 20px 20px 0% 0%;
-            width: 40%;
+            width: 42%;
             height: auto;
-            margin: 132px 30% 0px 30%;
+            margin: 132px 29% 0px 29%;
         }
         main img{
             position: fixed;
