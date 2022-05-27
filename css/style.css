@@ -13,7 +13,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 200%;
+    height: 100%;
     width: 100%;
     background: linear-gradient(90deg,#FF79DA,#9356DC );
     -webkit-animation: cssAnimation 5s forwards; 
