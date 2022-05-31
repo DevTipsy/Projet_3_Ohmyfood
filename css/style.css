@@ -11,14 +11,14 @@
 /*Spinner*/
 .cs-loader {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     background: linear-gradient(90deg,#FF79DA,#9356DC );
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    -webkit-animation: cssAnimation 5s forwards; 
-    animation: cssAnimation 5s forwards;
+    -webkit-animation: cssAnimation 3s forwards; 
+    animation: cssAnimation 3s forwards;
   }
   .cs-loader-letters {
     position: fixed;
@@ -47,12 +47,12 @@
   @keyframes cssAnimation {
     0%   {opacity: 1;}
     90%  {opacity: 1;}
-    100% {opacity: 0;}
+    100% {opacity: 0;z-index:1;}
   }
   @-webkit-keyframes cssAnimation {
     0%   {opacity: 1;}
     90%  {opacity: 1;}
-    100% {opacity: 0;}
+    100% {opacity: 0;z-index:1;}
   }
   @keyframes lol {
     0% {
@@ -144,8 +144,11 @@ img {
     margin: 5px;
 }
     header {
+        position: relative;
+        z-index: 1;
         text-align: center;
         height: 10%;
+        background-color: #FFF;
     }
     header img{
         width: 45%;
@@ -153,7 +156,9 @@ img {
         margin: 5% 5% 2% 5%;
     }
     main {
-        height: 80%;
+      position: relative;
+      z-index: 1;
+      height: 80%;
     }
     /*Localisation*/
     main .localisation{
@@ -179,7 +184,7 @@ img {
     .button {
         display: inline-block;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         background: linear-gradient(#FF79DA,#9356DC );
         border-radius: 35px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -200,18 +205,9 @@ img {
     .bloc_fonctionnement {
         display: block;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         padding: 15px 0px 35px 0px;
-        -webkit-animation: appear 1s forwards reverse; 
-        animation: appear forwards reverse;
-        }
-        @keyframes appear {
-          0%   {opacity: 1;}
-          100% {opacity: 0;}
-        }
-        @-webkit-keyframes appear {
-          0%   {opacity: 1;}
-          100% {opacity: 0;}
+        background-color: #FFF;
         }
     li {
         display: inline-flex;
