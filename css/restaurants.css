@@ -39,20 +39,20 @@ div img{
 }
 /*Main*/
 main img{
-    position: fixed;
+    position: relative;
     max-width: 1024px;
     width: 100%;
-    height: 150px;
+    height: 215px;
     object-fit: cover;
 }
 .main_content{
-    position: absolute;
+    position: relative;
     max-width: 1024px;
     background-color: #f6f5f5;
     border-radius: 20px 20px 0% 0%;
     width: 100%;
     height: auto;
-    margin-top: 132px;
+    margin-top: -20px;
 }
 .nom_restaurant{
     display: inline-flex;
@@ -67,11 +67,13 @@ h1{
 .fa-regular.fa-heart{
     position: absolute;
     margin: 20px 88%;
+    cursor: pointer;
 }
 .fa-solid.fa-heart{
     position: absolute;
     color: transparent;
     margin: 20px 88%;
+    cursor: pointer;
 }
 .nom_restaurant .fa-solid.fa-heart:hover{
     background-image: linear-gradient(45deg,#FF79DA,#9356DC );
@@ -201,20 +203,24 @@ h1{
     margin-left: 3%;
 }
 span.checkbox {
-    position: absolute;
-    top: 100px;
-    left: 509px;
+    display: inline-flex;
+    position: static;
+    background-color: #99E2D0;
+    top: 268px;
+    left: 692px;
     width: 50px;
     height: 50px;
-    padding: 10px;
-    font-size: 30px;
     margin: 0;
-    opacity: 0;
-    transition: transform 330ms ease-in-out;
+    opacity: 1;
+    overflow: hidden;
     }
   .checkbox .fa-solid.fa-circle-check {
-    color: #99E2D0;
-    transition: transform 500ms ease-in-out;
+    display: flex;
+    position: fixed;
+    color: white;
+    font-size: 35px;
+    margin: 0;
+    padding: 7px;
   }
 .plats h3{
     width: 100%;
@@ -269,12 +275,11 @@ button:hover{
     footer{
         display: flex;
         flex-direction: column;
-        position: sticky;
+        position: relative;
         font-size: 16px;
         background-color: #302f2e;
         color: #fff;
         height: auto;
-        margin-top: 970px;
         line-height: 1.5;
         padding-bottom: 30px;
     }
