@@ -112,12 +112,20 @@ h1{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-.entrees:hover{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    padding-right: 60px;
     transition: all 0.5s ease;
+}
+.entrees:hover .last_line .checkbox{
+    padding-right: 60px;
+}
+
+
+.entrees:hover .fa-solid {
+    animation: rotation 2s;
+}
+@keyframes rotation{
+  100%{
+      transform: rotate(360deg);
+  }
 }
 .bloc_plats{
     gap: 10px;
@@ -372,15 +380,12 @@ button:hover{
         }
         .entrees span{
             display: inline-flex;
-            margin-left: 3%;
         }
         .plats span{
             display: inline-flex;
-            margin-left: 3%;
         }
         .desserts span{
             display: inline-flex;
-            margin-left: 3%;
         }
         span.checkbox {
             display: inline-flex;
