@@ -58,7 +58,7 @@ main img{
     display: inline-flex;
 }
 h1{
-    font-family: 'Shrikhand', cursive;
+    font-family: Shrikhand, sans-serif;
     font-size: medium;
     font-weight: bold;
     margin: 20px 5px 20px 15px;
@@ -111,10 +111,12 @@ h1{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: all 0.5s ease;
 }
 .entrees:hover {
+    text-overflow: ellipsis;
+    overflow: hidden;
     padding-right: 60px;
+    transition: all 0.5s ease;
 }
 .entrees :hover > .checkbox .fa-solid.fa-circle-check {
     overflow: hidden;
@@ -193,7 +195,6 @@ span.checkbox {
     width: 90%;
     height: 51px;
     padding: 10px;
-    font-size: 12px;
     line-height: 1;
     cursor: pointer;
     white-space: nowrap;
@@ -222,6 +223,13 @@ span.checkbox {
 }
 .plats h3{
     width: 100%;
+    font-size: 12px;
+}
+.last_line{
+    display: inline-block;
+    width: 100%;
+    height: 29px;
+    font-size: 12px;
 }
 .plats p{
     display: inline-block;
@@ -229,25 +237,28 @@ span.checkbox {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin: 0px 0px 10px 0%;
 }
 .plats span{
-    display: inline-flex;
-    margin-left: 3%;
+    display: inline-block;
+    margin: 0px 0px 0px 3%;
 }
 span.checkbox {
     display: inline-block;
     background-color: #99E2D0;
+    font-size: 20px;
     width: 20%;
-    height: 51px;
+    height: 52px;
     overflow: hidden;
     transform: translateX(57%);
     border-radius: 0px 10px 10px 0px;
-    margin: -24px 0px 0px -5%;
+    margin: -22px 0px 0px -5%;
     line-height: 1em;
     padding: 7px;
     }
   .checkbox .fa-solid.fa-circle-check {
     color: white;
+    margin: 5px 0px 0px 0px;
     padding: 3px;
   }
 .bloc_desserts{
@@ -302,6 +313,13 @@ span.checkbox {
 }
 .desserts h3{
     width: 100%;
+    font-size: 12px;
+}
+.last_line{
+    display: inline-block;
+    width: 100%;
+    height: 29px;
+    font-size: 12px;
 }
 .desserts p{
     display: inline-block;
@@ -309,16 +327,17 @@ span.checkbox {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin: 0px 0px 10px 0%;
 }
 .desserts span{
-    display: inline-flex;
-    margin-left: 3%;
+    display: inline-block;
+    margin: 0px 0px 0px 3%;
 }
 span.checkbox {
     display: inline-block;
     background-color: #99E2D0;
     width: 20%;
-    height: 51px;
+    height: 52px;
     overflow: hidden;
     transform: translateX(57%);
     border-radius: 0px 10px 10px 0px;
@@ -328,6 +347,7 @@ span.checkbox {
     }
   .checkbox .fa-solid.fa-circle-check {
     color: white;
+    margin: 5px 0px 0px 0px;
     padding: 3px;
   }
 .commander{
@@ -419,13 +439,15 @@ button:hover{
             display: inline-flex;
         }
         span.checkbox {
-            display: inline-flex;
+            display: inline-block;
             background-color: #99E2D0;
             width: 20%;
-            height: 51px;
+            height: 52px;
             overflow: hidden;
             transform: translateX(57%);
             border-radius: 0px 10px 10px 0px;
             margin: -24px 0px 0px -5%;
+            line-height: 1em;
+            padding: 7px;
             }
     }

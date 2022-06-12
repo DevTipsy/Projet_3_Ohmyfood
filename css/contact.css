@@ -1,0 +1,66 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red;*/
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+.logo {
+    height: 100%;
+    width: 100%;
+}
+img {
+    border-style: none;
+    width: 64%;
+    height: 80%;
+    padding: 5%;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+main {
+    display: flex;
+    height: 74%;
+    width: 100%;
+}
+p {
+    padding: 5%;
+    }
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 16px;
+    background-color: #302f2e;
+    color: #fff;
+    line-height: 1.5;
+    padding-bottom: 37px;
+    margin-top: 100%;
+}
+footer img{
+    height: 20px;
+    width: 100px;
+    margin: 20px 100% 10px 15px;
+    filter: invert(100%);
+}
+footer span{
+    margin: 5px 0px 0px 0px;
+}
+footer span i{
+    margin: 7px 5px 0px 15px;
+    font-size: 12px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 15px 0px 0px 5px;
+}
+footer .Mentions_Contact{
+    margin: 5px 0px 0px 15px;
+}
