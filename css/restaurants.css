@@ -92,7 +92,7 @@ h1{
   @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_entrees h2{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     width: 25px;
     border-bottom: solid 2px #99E2D0;
     padding-bottom: 3px;
@@ -152,6 +152,8 @@ h1{
 }
 .entrees span{
     display: inline-block;
+    position: relative;
+    bottom: 15px;
     margin: 0px 0px 0px 3%;
 }
 span.checkbox {
@@ -166,6 +168,7 @@ span.checkbox {
     margin: -22px 0px 0px -5%;
     line-height: 1em;
     padding: 7px;
+    bottom: 0px;
     }
     .checkbox .fa-solid.fa-circle-check {
         color: white;
@@ -181,7 +184,7 @@ span.checkbox {
   @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_plats h2{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     width: 25px;
     border-bottom: solid 2px #99E2D0;
     padding-bottom: 3px;
@@ -241,6 +244,8 @@ span.checkbox {
 }
 .plats span{
     display: inline-block;
+    position: relative;
+    bottom: 15px;
     margin: 0px 0px 0px 3%;
 }
 span.checkbox {
@@ -255,6 +260,7 @@ span.checkbox {
     margin: -22px 0px 0px -5%;
     line-height: 1em;
     padding: 7px;
+    bottom: 0px;
     }
   .checkbox .fa-solid.fa-circle-check {
     color: white;
@@ -270,7 +276,7 @@ span.checkbox {
   @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .bloc_desserts h2{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     width: 25px;
     border-bottom: solid 2px #99E2D0;
     padding-bottom: 3px;
@@ -331,6 +337,8 @@ span.checkbox {
 }
 .desserts span{
     display: inline-block;
+    position: relative;
+    bottom: 15px;
     margin: 0px 0px 0px 3%;
 }
 span.checkbox {
@@ -344,6 +352,7 @@ span.checkbox {
     margin: -24px 0px 0px -5%;
     line-height: 1em;
     padding: 7px;
+    bottom: 0px;
     }
   .checkbox .fa-solid.fa-circle-check {
     color: white;
