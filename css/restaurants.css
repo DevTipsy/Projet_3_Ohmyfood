@@ -118,7 +118,7 @@ h1{
     padding-right: 60px;
     transition: all 0.5s ease;
 }
-.entrees :hover > .checkbox .fa-solid.fa-circle-check {
+.bloc_entrees :hover > .last_line .checkbox .fa-solid.fa-circle-check {
     overflow: hidden;
     color: white;
     margin: 5px 0px 0px 0px;
@@ -210,7 +210,7 @@ span.checkbox {
     padding-right: 60px;
     transition: all 0.5s ease;
 }
-.plats :hover > .checkbox .fa-solid.fa-circle-check {
+.bloc_plats :hover > .last_line .checkbox .fa-solid.fa-circle-check {
     overflow: hidden;
     color: white;
     margin: 5px 0px 0px 0px;
@@ -303,7 +303,7 @@ span.checkbox {
     padding-right: 60px;
     transition: all 0.5s ease;
 }
-.desserts :hover > .checkbox .fa-solid.fa-circle-check {
+.bloc_desserts :hover > .last_line .checkbox .fa-solid.fa-circle-check {
     overflow: hidden;
     color: white;
     margin: 5px 0px 0px 0px;
